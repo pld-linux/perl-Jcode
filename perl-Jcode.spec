@@ -12,7 +12,7 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/authors/id/D/DA/DANKOGAI/%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-authors/id/D/DA/DANKOGAI/%{pnam}-%{version}.tar.gz
 # Source0-md5:	8f0be0e1e274392998272f5737e21bb1
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
