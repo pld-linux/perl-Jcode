@@ -3,7 +3,7 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pnam	Jcode
+%define		pnam	Jcode
 Summary:	Jcode - Japanese charset handler
 Summary(pl):	Jcode - obs³uga kodowania japoñskiego
 Name:		perl-Jcode
