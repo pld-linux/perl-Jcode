@@ -8,12 +8,12 @@ Summary:	Jcode - Japanese Charset Handler
 Summary(pl):	Jcode - obs³uga japoñskiego kodowania
 Name:		perl-Jcode
 Version:	0.82
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/D/DA/DANKOGAI/%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-MIME-Base64
 %endif
@@ -31,7 +31,8 @@ Jcode jest rozszerzeniem Perla do konwersji tekstu japoñskiego.
 %setup -q -n %{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -46,12 +47,12 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change* README
-%dir %{perl_sitearch}/Jcode
-%{perl_sitearch}/*.pm
-%{perl_sitearch}/Jcode/*.pm
-%{perl_sitearch}/Jcode/Unicode
-%dir %{perl_sitearch}/auto/Jcode
-%dir %{perl_sitearch}/auto/Jcode/Unicode
-%attr(755,root,root) %{perl_sitearch}/auto/Jcode/Unicode/*.so
-%{perl_sitearch}/auto/Jcode/Unicode/*.bs
+%dir %{perl_vendorarch}/Jcode
+%{perl_vendorarch}/*.pm
+%{perl_vendorarch}/Jcode/*.pm
+%{perl_vendorarch}/Jcode/Unicode
+%dir %{perl_vendorarch}/auto/Jcode
+%dir %{perl_vendorarch}/auto/Jcode/Unicode
+%attr(755,root,root) %{perl_vendorarch}/auto/Jcode/Unicode/*.so
+%{perl_vendorarch}/auto/Jcode/Unicode/*.bs
 %{_mandir}/man3/*
