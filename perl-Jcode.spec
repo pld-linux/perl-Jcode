@@ -4,22 +4,20 @@
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pnam	Jcode
-Summary:	Jcode - Japanese Charset Handler
-Summary(pl):	Jcode - obs³uga japoñskiego kodowania
+Summary:	Jcode - Japanese charset handler
+Summary(pl):	Jcode - obs³uga kodowania japoñskiego
 Name:		perl-Jcode
-Version:	0.82
+Version:	0.83
 Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/D/DA/DANKOGAI/%{pnam}-%{version}.tar.gz
-# Source0-md5:	7b06a8fa4e56714e5b85157bf49fdfff
+# Source0-md5:	64e137e289e9fc65c1afc00c08ffa0f3
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-MIME-Base64
 %endif
-# this *should not* be needed...
-Provides:	perl(Jcode::Constants)
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -35,6 +33,7 @@ Jcode jest rozszerzeniem Perla do konwersji tekstu japoñskiego.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor 
 %{__make}
+
 %{!?_without_tests:%{__make} test}
 
 %install
