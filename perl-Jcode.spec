@@ -9,7 +9,8 @@ Summary(pl):	Jcode - obs³uga kodowania japoñskiego
 Name:		perl-Jcode
 Version:	0.83
 Release:	2
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/D/DA/DANKOGAI/%{pnam}-%{version}.tar.gz
 # Source0-md5:	64e137e289e9fc65c1afc00c08ffa0f3
