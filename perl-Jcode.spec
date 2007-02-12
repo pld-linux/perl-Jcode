@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pnam	Jcode
 Summary:	Jcode - Japanese charset handler
-Summary(pl):	Jcode - obs≥uga kodowania japoÒskiego
+Summary(pl.UTF-8):   Jcode - obs≈Çuga kodowania japo≈Ñskiego
 Name:		perl-Jcode
 Version:	0.88
 Release:	1
@@ -25,8 +25,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Jcode is a Perl extension interface to convert Japanese text.
 
-%description -l pl
-Jcode jest rozszerzeniem Perla do konwersji tekstu japoÒskiego.
+%description -l pl.UTF-8
+Jcode jest rozszerzeniem Perla do konwersji tekstu japo≈Ñskiego.
 
 %prep
 %setup -q -n %{pnam}-%{version}
