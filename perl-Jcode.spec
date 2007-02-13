@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pnam	Jcode
 Summary:	Jcode - Japanese charset handler
-Summary(pl.UTF-8):   Jcode - obsługa kodowania japońskiego
+Summary(pl.UTF-8):	Jcode - obsługa kodowania japońskiego
 Name:		perl-Jcode
 Version:	0.88
 Release:	1
