@@ -8,7 +8,7 @@ Summary:	Jcode - Japanese charset handler
 Summary(pl.UTF-8):	Jcode - obsługa kodowania japońskiego
 Name:		perl-Jcode
 Version:	0.88
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
