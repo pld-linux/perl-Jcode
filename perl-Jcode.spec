@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pnam	Jcode
 Summary:	Jcode - Japanese charset handler
 Summary(pl.UTF-8):	Jcode - obsługa kodowania japońskiego
